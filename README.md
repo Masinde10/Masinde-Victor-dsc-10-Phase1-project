@@ -5,3 +5,7 @@ This project deals with a company that wants to venture into another business so
 ##Business Understanding
 
 The Business at hand deals with airplanes which touches on broad fields. Since the business targets both public and private business plans, the stakeholders in the business will be of a wide range. The Company itself is a stakeholder, the companies selling the airlines, the airports they will be operating in, the passengers, the crew who will handle the business and the government in the country of operation are all stakeholders.
+
+##Project Goal
+
+My project aims at Knowing the types of airplanes used in commercial and private entreprises.What plane manufacturing companies are prone to accidents.I also aim to know if the accidents due to human error or plane condition. The frequency of accidents and losses in this business is important therefore I want to know how often are plane accidents.
