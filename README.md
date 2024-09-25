@@ -12,7 +12,13 @@ The Business at hand deals with airplanes which touches on broad fields. Since t
 
 ### Project Goal
 
-My project aims at Knowing the types of airplanes used in commercial and private entreprises.What plane models are prone to accidents.I also aim to know if the accidents due to human error or plane condition. The frequency of accidents and losses in this business is important therefore I want to know how often are plane accidents. At the end I will give actionable insights that will help the board to make a decision.
+My project aims at Knowing the types of airplanes used in commercial and private entreprises and their aggregate against Total uninjured
+passengers.I am using the number of uninjured passengers to gauge the lowest risk.
+-who are the Air service providers with the highest uninjured passengers?
+-What plane models are not prone to accidents?
+-what models that have good safety features? 
+-How many engines and what type of engines are good for our business?.
+At the end I will give actionable insights that will help the board to make a decision.
 
 ## Data Understanding
 For my project, I am working with data that has already been collected by other data scientists. The data is stored in **kaggle** where it is updated oftenly and is made accessible to everyone who wants to do research with it. The data is stored in a **csv format** inside a folder named 'data'. When we read the data to our notebook using the pandas library, we get a dataframe as our output. The dataframe has 90348 rows and 31 columns. The columns define our data by giving the differnt fields their names while the rows hold the information of different columns.From a quick look at the dataframe, we know that the data we are dealing with is from investigation of aircraft accidents. We have both continous and categorical data, with the latter making the most part of our data. Out of 31 columns, 26 columns are made up of categorical data. The categorical data is in object form while the contious data is in float form.
@@ -22,10 +28,11 @@ My dataset in the original form is not ready for me to use in my analysis. The d
 
 ## Explorative Data Analysis
 After cleaning my data, it is now ready for analysis and visualization When doing analysis, often you compare hwo different variables affect an outcome. To investigate the various relationships between variables in our data, we use the **.groupby() method** which helps us to group the columns together and do aggregation. Since the project is specific to aircrafts for business, I went to the aircraft column and specified that I only want to deal with airplanes alone in my analysis. I perfomed various groupby functions using **'Total.Uninjured** as my aggregation element. Since we want to pinpoint the aircrafts with the lowest risk, I  used uninjured people as my metric for measuring the level of risk in this project. After grouping data in various categories, I came up with visualizations to help in interpreting the grouped data. This is the link to my Visualizations;
-https://public.tableau.com/views/ProjectDashboard_17272562308670/PrjoectDashboard?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+https://public.tableau.com/app/profile/victor.masinde/viz/ProjectDashboard_17272562308670/PrjoectDashboard?publish=yes
 
 
 ## Conclusion
+
 I grouped my data by **Model** and checked how the model of the plane affects safety of passengers incase of an accident. Different models in After plotting a bar graph, we find that model MD 83 has the highest number of uninjered passengers.**model MD 83** is the Model with the least risks.
 
 I went further and grouped my data by **Air.carrier** to check and see how adifferent Air carriers can affect the rate at which passengers remain uninjured incase of an incident or accident.Differenent companies have diferent ways of operating their planes and this can dertermine the level of injuries incase of accidents. After visualization below,we find that the Singapore Airlines, Ltd' has the highest number of uninjered passengers.**Singapore Airlines** is the Air carrier with the least risks.
